@@ -15,19 +15,19 @@ The above conditions can be achieved by various methods, but here we have used T
 We know that set cannot contain dupilicate values and it has retainAll method, where we compare two inputs and it keeps a single set of common values. We have used the same method in this program<br>
 The program we are dealing with is of character type, we convert the string into chatacter array<br>
 ```java
-          char [] c = a.toCharArray();
-	        char [] ch = b.toCharArray();
+char [] c = a.toCharArray();
+char [] ch = b.toCharArray();
 ```
 Converting the array into set<br>
 ```java
-  Set<Character> s1 = new TreeSet<>();
-	        Set<Character> s2 = new TreeSet<>();
-	        for (char character : c) {
-				s1.add(character);
-			}
-	        for (char chare : ch) {
-	        	s2.add(chare);
-	        }
+Set<Character> s1 = new TreeSet<>();
+Set<Character> s2 = new TreeSet<>();
+for (char character : c) {
+	s1.add(character);
+}
+for (char chare : ch) {
+	s2.add(chare);
+}
 ```
 Comparing the both chracter arrays, and retaining only common characters<br>
 ```java
@@ -36,8 +36,8 @@ Comparing the both chracter arrays, and retaining only common characters<br>
 Taking the count of number of elements to be removed to make anagrams.<br>
 ```java
  count = (c.length)-(s1.size());
-	        count2 = (ch.length)-(s1.size());
-	        System.out.println(count+count2);
+count2 = (ch.length)-(s1.size());
+System.out.println(count+count2);
 ```
 <b>Output:</b>
 
